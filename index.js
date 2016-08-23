@@ -9,8 +9,12 @@ function myCallBack(element){
   var y = []
   y.push(element)
 }
-function iterate(myCallback){
+function iterate(myCallBack){
   var x = [1,2,3,4,5]
   x.forEach(myCallBack)
   return x
+}
+
+function doToArray(x,callback){
+  x.forEach(callback)
 }
