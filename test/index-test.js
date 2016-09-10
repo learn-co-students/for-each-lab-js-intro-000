@@ -1,3 +1,21 @@
+function iterativeLog(array){
+  array.forEach(function(element, index){
+    console.log(`${index}: ${element}`);
+  })
+}
+
+function iterate(callback) {
+    let array = [1];
+     array.forEach(callback);
+     return array;
+}
+
+function doToArray(array, callback) {
+    array.forEach(callback);
+}
+console.log(iterativeLog([1]));
+
+
 describe('index', function() {
   describe('iterativeLog(array)', function() {
     it('logs each element with the format `${index}: ${element}`', function() {
