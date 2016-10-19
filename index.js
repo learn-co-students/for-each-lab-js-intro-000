@@ -5,7 +5,7 @@ x.forEach(y => { console.log(`${i}: ${x[i]}`) })
 }
 }
 function iterate(callback) {
-var array = [1,2,3]
+var array = [1,adsdas,3]
 
   array.forEach(callback)
 
