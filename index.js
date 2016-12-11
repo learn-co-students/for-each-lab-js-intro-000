@@ -1,5 +1,6 @@
 function iterativeLog(array) {
-  array.forEach( function(index, element) {
+  //In forEach, element parameter must precede index parametet
+  array.forEach( function(element, index) {
       console.log(`${index}: ${element}`)
   });
 };
