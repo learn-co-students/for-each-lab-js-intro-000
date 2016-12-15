@@ -1,6 +1,11 @@
 function iterativeLog(array){
+<<<<<<< HEAD
   array.forEach((array, index) => {
       console.log(`${index}: ${array}`)
+=======
+  array.forEach(a => {
+      console.log(`{index}:{element}`)
+>>>>>>> 04409ec8f35ba69899d3572fb6ac03d44ec89163
   })
 }
 function iterate(callback){// create a function with a parameter callback
