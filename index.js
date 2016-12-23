@@ -1,9 +1,9 @@
 function iterativeLog(array) {
-  array.forEach({console.log(`${index}: ${element}`)} )
+  array.forEach((element, index, array)=>{ console.log(`${index}: ${element}`)})
 }
 
 function iterate(callback) {
-  array=[0,1,2]
+  array=[0,1,2];
   array.forEach(callback)
   return array
 }
