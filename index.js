@@ -13,3 +13,5 @@ function iterate(callback) {
 function doToArray(array, callback) {
   array.forEach(callback)
 }
+
+//this is a comment
