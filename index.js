@@ -4,8 +4,13 @@ function iterativeLog(array){
 }
 
 function iterate(callback){
-  var letters = ["a", "b", "c"];
-  letters.forEach(callback()){
-  }
+  var letters = ["a","b","c"];
+  callback(letters);
   return letters
+}
+
+function doToArray(array, callback){
+  array.forEach(function(element){
+    callback(element);
+  });
 }
