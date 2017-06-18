@@ -1,13 +1,13 @@
 function iterativeLog(array){
-  array.forEach(function(element, index) {
+  array.forEach((element, index) => {
     console.log(`${index}: ${element}`);
-  })
+  });
 }
 
 function iterate(callback){
-  oneThroughSix = [1, 2, 3, 4, 5, 6];
-  oneThroughSix.forEach(callback);
-  return oneThroughSix;
+  var dogs = ["Sheeba", "Durban", "Logan"];
+  dogs.forEach(callback);
+  return dogs;
 }
 
 function doToArray(array, callback){
