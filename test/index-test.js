@@ -3,7 +3,7 @@ describe('index', function() {
     it('logs each element with the format `${index}: ${element}`', function() {
       const log = expect.spyOn(console, 'log').andCallThrough()
 
-      iterativeLog([1, 2, 3])
+      expect(iterativeLog([1, 2, 3])).toBe('0: 1,1: 2,2: 3,')
 
       expect(log).toHaveBeenCalledWith('0: 1')
       expect(log).toHaveBeenCalledWith('1: 2')
