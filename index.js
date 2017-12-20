@@ -1,15 +1,15 @@
 function iterativeLog(array) {
-  array.forEach(function logout(element, index, array) {
+  array.forEach((element, index) {
     console.log(`${index}: ${element}`);
   });
 };
 
 function iterate(callback) {
   var plants = ['tree', 'flower', 'grass'];
-  plants.forEach(callback);
+  plants.forEach(callback); //why can't be callback(plants)
   return plants;
 };
 
 function doToArray(array, callback) {
-  array.forEach(callback);
+  array.forEach(callback); // why can't be callback(array)
 }
