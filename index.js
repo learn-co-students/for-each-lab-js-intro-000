@@ -2,7 +2,7 @@ function iterativeLog(array) {
   array.forEach(helpMe);
 }
 
-function helpMe(element, index) {
+function helpMe(element, index, arrray) {
   console.log(`${index}: ${element}`);
 }
 
