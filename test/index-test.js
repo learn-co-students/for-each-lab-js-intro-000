@@ -1,6 +1,6 @@
-describe('index', function() {
-  describe('iterativeLog(array)', function() {
-    it('logs each element with the format `${index}: ${element}`', function() {
+describe('index', function () {
+  describe('iterativeLog(array)', function () {
+    it('logs each element with the format `${index}: ${element}`', function () {
       const log = expect.spyOn(console, 'log').andCallThrough()
 
       iterativeLog([1, 2, 3])
@@ -14,8 +14,8 @@ describe('index', function() {
     })
   })
 
-  describe('iterate(callback)', function() {
-    it('calls the callback on an internal array, then returns the array', function() {
+  describe('iterate(callback)', function () {
+    it('calls the callback on an internal array, then returns the array', function () {
       const forEach = expect.spyOn(Array.prototype, 'forEach').andCallThrough()
       const callback = expect.createSpy()
 
@@ -33,8 +33,8 @@ describe('index', function() {
     })
   })
 
-  describe('doToArray(array, callback)', function() {
-    it('uses `callback` as the callback for `array`.forEach', function() {
+  describe('doToArray(array, callback)', function () {
+    it('uses `callback` as the callback for `array`.forEach', function () {
       const array = [1, 2, 3]
       const callback = expect.createSpy()
 
