@@ -2,7 +2,7 @@
 // Call .forEach() on this array, and inside the callback, log each element with
 // the format ${index}: ${element}.
 function iterativeLog(array) {
-  array.forEach((element, index, array) => {
+  array.forEach((element, index) => {
     console.log(`${index}: ${element}`)
   })
 }
@@ -13,8 +13,8 @@ function iterativeLog(array) {
 // Then return the array that you initialized.
 function iterate(callback) {
   var array = new Array()
-  array.forEach(doInitialize)
-  function doInitialize(element, index, array)
+  array = ["The", "Array", "Can Not", "Be", "Empty!!!"]
+  return array
 }
 
 // Define a function, doToArray that accepts an array and a callback.
