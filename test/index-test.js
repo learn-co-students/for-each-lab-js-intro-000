@@ -4,7 +4,7 @@ describe('index', function() {
       const log = expect.spyOn(console, 'log').andCallThrough()
 
       iterativeLog([1, 2, 3])
-
+      
       expect(log).toHaveBeenCalledWith('0: 1')
       expect(log).toHaveBeenCalledWith('1: 2')
       expect(log).toHaveBeenCalledWith('2: 3')
