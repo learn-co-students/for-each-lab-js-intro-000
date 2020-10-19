@@ -20,7 +20,6 @@ describe('index', function() {
       const callback = expect.createSpy()
 
       const result = iterate(callback)
-
       // This is a hack to fix the fact that
       // this assertion is checked before forEach()
       // has been called. Totally unclear why that's
