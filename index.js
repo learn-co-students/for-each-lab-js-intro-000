@@ -1,6 +1,16 @@
-function iterativeLog(list) {
-     list.forEach(myFunction);
-    function myFunction(element, index, arr) {
-    	${index}: ${element};
-    }
+
+function iterativeLog(array) {
+     array.forEach((element, index) => {
+    	console.log(`${index}: ${element}`);
+    })
+}
+
+function iterate(myFunction) {
+	let array = [0]
+	array.forEach(myFunction) 
+	return array 
+}
+
+function doToArray(array, myFunction) {
+    array.forEach(myFunction)
 }
