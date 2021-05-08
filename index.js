@@ -1,10 +1,7 @@
-function iterativeLog(array) {
-  array.forEach(element, index, array) => {console.log(`${index}: ${element}`)}
-}
 
-* evens.forEach(even => {
-*   console.log(`${even} is not odd!`);
-* });
+function iterativeLog(array) {
+  array.forEach((element, index, array) => {console.log(`${index}: ${element}`)}
+)}
 
 function iterate(callback){
   array = [1, 2, 4];
